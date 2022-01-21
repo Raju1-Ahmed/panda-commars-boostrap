@@ -8,11 +8,12 @@
     <!-- Boostrap style sheet -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header> 
         <!-- start navigation  -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#"> <img src="images/logo.png" alt="" width="159px" height="40.81px" class="d-inline-block align-text-top">
                 </a>
@@ -25,10 +26,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#shoes">shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#bags">Bags</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#subscrives">subscrives</a>
                   </li>
                  </ul>
              </div>
@@ -37,11 +41,11 @@
           <!-- End Nav  -->
 
           <!-- images slider  -->
-          <section class="container">
+          <section class="container my-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <div class="row p-5 d-flex align-items-center bg-info bg-gradient">
+                      <div class="row p-5 d-flex align-items-center panda-bg-color bg-gradient">
                           <div class="col-lg-7">
                             <h1>Mi LED TV 4A PRO 32</h1>
                             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -54,7 +58,7 @@
                       </div>
                      </div>
                   <div class="carousel-item">
-                    <div class="row p-5 d-flex align-items-center bg-info bg-gradient">
+                    <div class="row p-5 d-flex align-items-center panda-bg-color bg-gradient">
                         <div class="col-lg-7">
                           <h1>Mi LED TV 4A PRO 32</h1>
                           <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -67,7 +71,7 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="row p-5 d-flex align-items-center bg-info bg-gradient">
+                    <div class="row p-5 d-flex align-items-center panda-bg-color bg-gradient">
                         <div class="col-lg-7">
                           <h1>Mi LED TV 4A PRO 32</h1>
                           <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -116,7 +120,8 @@
                  </div>
          </section> 
          <!-- show section  -->
-            <section class="container">
+            <section id="shoes" class="container">
+              <h2>shoes</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col">
                       <div class="card border-0 shadow-lg h-100">
@@ -163,14 +168,14 @@
                   </div>
             </section>
             <!-- Bag section  -->
-            <section class="container my-4">
+            <section id="bags" class="container my-4 ">
                 <h2>Backpack</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col">
                       <div class="card border-0 shadow-lg h-100">
-                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
+                          <h5 class="card-title">Ison Backpack</h5>
                           <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
                         </div>
                         <div class="m-5">
@@ -182,9 +187,9 @@
                     </div>
                     <div class="col">
                       <div class="card border-0 shadow-lg h-100">
-                        <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Reebok Pump</h5>
+                          <h5 class="card-title">Biaowang Backpack</h5>
                           <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
                         </div>
                         <div class="m-5">
@@ -196,9 +201,9 @@
                     </div>
                     <div class="col">
                       <div class="card border-0 shadow-lg h-100">
-                        <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Reebok All Terrain</h5>
+                          <h5 class="card-title">Dxyizu WS54 Smart</h5>
                           <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
                         </div>
                         <div class="m-5">
@@ -210,8 +215,20 @@
                     </div>
                   </div>
             </section>
+            <!-- subscrives  -->
+            <section id="subscrives" style="height: 300px;" class="container align-items-center d-flex panda-bg-color justify-content-center rounded-3">
+                <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales specials and more</p>
+                <input class="form-control " type="email" name="" id="" placeholder="Email">
+                <button class="form-control mt-1 btn btn-warning">Submit</button>
+            </div> 
+            </section>
         </main>
-    <footer>
+    <footer class="my-4 text-center"> 
+      <p>  
+        <small>© 2022 GitHub, Inc.his Agreement may GitHub,</small>
+      </p>
     </footer>
     <!-- boostrap style javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
